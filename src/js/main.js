@@ -1,4 +1,5 @@
-window.addEventListener('DOMContentLoaded', () => {
-    console.log('start')
-})
-
+window.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("toggle");
+  const nav = document.getElementById("nav");
+  toggle.addEventListener("click", () => nav.classList.toggle("active"));
+});
