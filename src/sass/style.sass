@@ -53,24 +53,6 @@ iframe, img, svg, video
 
 p
     margin: 0
-nav
-    background-color: whitesmoke
-    padding: 20px
-    width: 80px
-    display: flex
-    align-items: center
-    justify-content: center
-    border-radius: 3px
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3)
-    transition: width 0.6s
-    transition-timing-function: linear
-    &.active
-        width: 350px
-        & ul
-            width: 100%
-            & li
-                opacity: 1
-                transform: rotateY(360deg)
 ul
     margin: 0
     padding-left: 0
@@ -83,9 +65,30 @@ li
     list-style-type: none
     transform: rotateY(0deg)
     opacity: 0
-    transition: transform 0.6s
-    transition: opacity 0.6s
+    transition: all 0.6s
     transition-timing-function: linear
+nav
+    background-color: whitesmoke
+    padding: 20px
+    width: 80px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 3px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3)
+    transition: width 0.6s
+    transition-timing-function: linear
+    &.active
+        width: 380px
+        & .icon .line1
+            transform: rotate(-765deg) translateY(5.5px)
+        & .icon .line2
+            transform: rotate(765deg) translateY(-5.5px)
+        & ul
+            width: 100%
+            & li
+                opacity: 1
+                transform: rotateY(360deg)
 
 a
     text-decoration: none
